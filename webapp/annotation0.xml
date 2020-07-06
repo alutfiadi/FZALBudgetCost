@@ -1,0 +1,45 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+	<edmx:Reference Uri="/sap/opu/odata/sap/ZADPLWIF_Q002_AL_SRV/$metadata">
+		<edmx:Include Alias="Metadata" Namespace="ZADPLWIF_Q002_AL_SRV"/>
+	</edmx:Reference>
+	<edmx:Reference Uri="https://wiki.scn.sap.com/wiki/download/attachments/448470968/UI.xml?api=v2">
+		<edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
+	</edmx:Reference>
+	<edmx:DataServices>
+		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="ALBudgetCost.annotation0.ZADPLWIF_Q002_AL_SRV">
+			<Annotations Target="Metadata.ZADPLWIF_Q002_ALResult">
+				<Annotation Term="UI.Chart">
+					<Record Type="UI.ChartDefinitionType">
+						<PropertyValue Property="ChartType" EnumMember="UI.ChartType/Column"/>
+						<PropertyValue Property="Measures">
+							<Collection>
+								<PropertyPath>A003N8BXHSLMV9XEHJE97VSA5R</PropertyPath>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="MeasureAttributes">
+							<Collection>
+								<Record Type="UI.ChartMeasureAttributeType">
+									<PropertyValue Property="Measure" PropertyPath="A003N8BXHSLMV9XEHJE97VSA5R"/>
+									<PropertyValue Property="Role" EnumMember="UI.ChartMeasureRoleType/Axis1"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="Dimensions">
+							<Collection>
+								<PropertyPath >A4ZADPLWIFYEARS2</PropertyPath>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="DimensionAttributes">
+							<Collection>
+								<Record Type="UI.ChartDimensionAttributeType">
+									<PropertyValue Property="Dimension" PropertyPath="A4ZADPLWIFYEARS2"/>
+									<PropertyValue Property="Role" EnumMember="UI.ChartDimensionRoleType/Category"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

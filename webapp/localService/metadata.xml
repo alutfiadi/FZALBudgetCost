@@ -1,0 +1,26 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZADPLWIF_Q002_AL_SRV" xml:lang="en" sap:schema-version="1">
+			<EntityType Name="ZADPLWIF_Q002_ALResult" sap:semantics="aggregate" sap:content-version="1">
+				<Key><PropertyRef Name="ID"/></Key><Property Name="ID" Type="Edm.String" Nullable="false" sap:updatable="false"/><Property Name="TotaledProperties" Type="Edm.String" sap:aggregation-role="totaled-properties-list" sap:is-annotation="true"
+					sap:label="Totaled Properties" sap:updatable="false"/><Property Name="A4ZADPLWIFYEARS2" Type="Edm.String" MaxLength="4" sap:aggregation-role="dimension" sap:creatable="false" sap:label="Year"
+					sap:updatable="false"/><Property Name="A4ZADPLWIFCOUNTRY" Type="Edm.String" MaxLength="11" sap:aggregation-role="dimension" sap:creatable="false"
+					sap:label="Country" sap:updatable="false"/><Property Name="A4ZADPLWIFREGION" Type="Edm.String" MaxLength="15" sap:aggregation-role="dimension" sap:creatable="false" sap:label="Region"
+					sap:updatable="false"/><Property Name="A4ZADPLWIFCOMPANY" Type="Edm.String" MaxLength="2" sap:aggregation-role="dimension" sap:creatable="false"
+					sap:label="Company" sap:updatable="false"/><Property Name="A4ZADPLWIFCOMPANY_NAME" Type="Edm.String" MaxLength="24" sap:aggregation-role="dimension" sap:creatable="false"
+					sap:label="Company_Name" sap:updatable="false"/><Property Name="A4ZADPLWIFCATEGORY" Type="Edm.String" MaxLength="21" sap:aggregation-role="dimension" sap:creatable="false"
+					sap:label="Category" sap:updatable="false"/><Property Name="A4ZADPLWIFITEM" Type="Edm.String" MaxLength="34" sap:aggregation-role="dimension" sap:creatable="false" sap:label="Item"
+					sap:updatable="false"/><Property Name="A003N8BXHSLMV9XEHJE97VSA5R" Type="Edm.Decimal" Precision="42" Scale="3" sap:aggregation-role="measure" sap:creatable="false"
+					sap:filterable="false" sap:label="Budget" sap:text="A003N8BXHSLMV9XEHJE97VSA5R_F" sap:updatable="false"/><Property Name="A003N8BXHSLMV9XEHJE97VSA5R_F" Type="Edm.String" MaxLength="60" sap:creatable="false" sap:filterable="false"
+					sap:label="Budget (Formatted)" sap:updatable="false"/><Property Name="A003N8BXHSLMV9XEHJE97VSGHB" Type="Edm.Decimal" Precision="42" Scale="3" sap:aggregation-role="measure" sap:creatable="false"
+					sap:filterable="false" sap:label="unit cost" sap:text="A003N8BXHSLMV9XEHJE97VSGHB_F" sap:updatable="false"/><Property Name="A003N8BXHSLMV9XEHJE97VSGHB_F" Type="Edm.String" MaxLength="60" sap:creatable="false" sap:filterable="false"
+					sap:label="unit cost (Formatted)" sap:updatable="false"/><Property Name="A003N8BXHSLMV9XEHJE97VSMSV" Type="Edm.Decimal" Precision="42" Scale="3" sap:aggregation-role="measure" sap:creatable="false"
+					sap:filterable="false" sap:label="Hectar" sap:text="A003N8BXHSLMV9XEHJE97VSMSV_F" sap:updatable="false"/><Property Name="A003N8BXHSLMV9XEHJE97VSMSV_F" Type="Edm.String" MaxLength="60" sap:creatable="false" sap:filterable="false"
+					sap:label="Hectar (Formatted)" sap:updatable="false"/><Property Name="A003N8BXHSLMV9XEHJE97VST4F" Type="Edm.Decimal" Precision="42" Scale="3" sap:aggregation-role="measure" sap:creatable="false"
+					sap:filterable="false" sap:label="TotalCost" sap:text="A003N8BXHSLMV9XEHJE97VST4F_F" sap:updatable="false"/><Property Name="A003N8BXHSLMV9XEHJE97VST4F_F" Type="Edm.String" MaxLength="60" sap:creatable="false" sap:filterable="false"
+					sap:label="TotalCost (Formatted)" sap:updatable="false"/></EntityType>
+			<EntityContainer Name="ZADPLWIF_Q002_AL_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="ZADPLWIF_Q002_ALResults" EntityType="ZADPLWIF_Q002_AL_SRV.ZADPLWIF_Q002_ALResult" sap:creatable="false"
+				sap:updatable="false" sap:deletable="false" sap:content-version="1"/></EntityContainer><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZADPLWIF_Q002_AL_SRV/$metadata"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZADPLWIF_Q002_AL_SRV/$metadata"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
